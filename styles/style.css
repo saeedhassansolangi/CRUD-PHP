@@ -1,0 +1,126 @@
+
+body{
+    margin:0 auto;
+    background-color: #05030f;
+    color:#fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+th{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding:10px;
+
+}
+
+#updateBtn{
+    background-color: #1060af;
+    color:white;
+    padding:5px 10px;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+#deleteBtn {
+    background-color: #af1717;
+    color:white;
+    padding:5px 10px;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+input{
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+    border:0px;
+    background-color: #05030f;
+    border: 2px solid #282828;
+    color: white;
+}
+
+input:focus{
+    outline: 2px solid cornflowerblue;
+}
+
+
+.form-control{
+    margin: 5px 0px
+}
+
+label {
+    display: block;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto
+}
+
+#addNewStd{
+    border: solid 2px  #d6ff00;
+    padding:10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#addNewStd:hover, #updateBtn:hover, #deleteBtn:hover{
+    opacity: 0.7;
+}
+button[type="submit"]{
+    padding:10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #d6ff00;
+    border-radius: 5px;
+    border:0px;
+}
+
+button[type="submit"]:hover{
+    opacity: 0.7;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    padding:10px;
+    border: 1px solid gray;
+    border-radius: 100px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.success{
+    color:greenyellow !important;
+}
+
+.recordResponse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.goback{
+    color:dodgerblue;
+    font-size: 30px;
+    color:dodgerblue;
+}
