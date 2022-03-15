@@ -7,7 +7,6 @@ require('./partials/headers.php');
 
 require('./config/db.php');
 
-
 $read_record = "SELECT * from students";
 if($result = mysqli_query($con, $read_record)){
     if(mysqli_num_rows($result) > 0){
@@ -30,7 +29,6 @@ if($result = mysqli_query($con, $read_record)){
           echo "<td>".$data['department']."</td>";
           echo "<td>".$data['university']."</td>";
           echo "<td>".$data['salary']."</td>";
-//          echo "<td><a href='hello.php?stdId=".$data['studentId']."'>".$data['studentId']."</a></td>";
           echo "<td><a href='update.php?stdId=".$data['studentId']."' id='updateBtn'>Update</a></td>";
           echo "<td><a href='destory.php?stdId=".$data['studentId']."' id='deleteBtn'>Delete</a></td>";
           echo "</tr>";

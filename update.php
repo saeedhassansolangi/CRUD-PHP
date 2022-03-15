@@ -7,7 +7,6 @@ echo "<div class='main'>";
 $stdId = $_GET['stdId'];
 
 $query = "SELECT * FROM `students` WHERE studentId = '$stdId'";
-//echo $sql;
 
 if($result = mysqli_query($con, $query)){
     if(mysqli_num_rows($result) > 0){
@@ -48,9 +47,6 @@ if($result = mysqli_query($con, $query)){
 }else {
     echo "<h1>Something Went Wrong</h1>";
 }
-
-
-
 ?>
 <?php
 
@@ -63,12 +59,7 @@ $stdSal = $_POST['stdSal'];
 if(isset($stdName)  && isset($stdDept) && isset($stdUni) && isset($stdSal)){
     $updateStd = "UPDATE `students` SET `student_name`='$stdName',`department`='$stdDept',`university`='$stdUni',`salary`='$stdSal' WHERE studentId = '$studentId'";
     if($result = mysqli_query($con, $updateStd)){
-
-        echo "<div class='recordResponse'>";
-        echo "<h1 class='success'>Record Updated Successfully</h1>";
-        echo '<a href="read.php" class="goback">Go Back</a>';
-        echo "</div>";
-
+        header('location: read.php');
     }else {
         echo "<h1>Somthing went wrong while updating</h1>";
     }

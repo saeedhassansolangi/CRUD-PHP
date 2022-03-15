@@ -11,10 +11,7 @@ $stdId = $_GET['stdId'];
 $query = "DELETE FROM `students` WHERE studentId = '$stdId'";
 
 if($result = mysqli_query($con, $query)){
-    echo "<div class='recordResponse'>";
-    echo "<h1 class='success'>Record Deleted Successfully</h1>";
-    echo '<a href="read.php" class="goback">Go Back</a>';
-    echo "</div>";
+    header('location: read.php');
 }else {
     echo "<h1>Something went wrong</h1>";
 }
